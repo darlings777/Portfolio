@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Abzal's Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSK1bmrPcLa00ot92x01BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Hero Section start -->
+    <div class="hero" id="home">
+        <nav>
+            <h2 class="logo">Port<span>folio</span></h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </nav>
+        <div class="content">
+            <h4>Hello, my name is</h4>
+            <h1>Abzal</h1>
+            <h3>I am an engineering student.</h3>
+            <div class="newslatter">
+                <form id="emailForm" action="thankyou.html" method="get">
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Let's Start">
+                </form>
+                
+                <form id="resumeForm" action="download_resume.pdf" method="post">
+                    <input type="hidden" name="resume_name" value="YourResume.pdf">
+                    <a href="download_resume.pdf" download="YourResume.pdf" class="btn">Download Resume</a>
+                </form>
+                
+                <script>
+                    function downloadResume() {
+                        var form = document.getElementById("resumeForm");
+                        form.submit();
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section Start -->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="img/main-img.jpg" alt="Main Image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer<span> & Cybersecurity</span></h5>
+                <p>As a graduating engineering student poised to earn a Bachelor's degree in GITAM DEEMED UNIVERSITY in 2025, I bring a dynamic blend of technical proficiency, leadership, and a meticulous commitment to detail. Proficient in frontend development, Firebase's machine learning, and Google Cloud Platform, I have successfully led projects, demonstrating initiative and delivering high-quality outcomes. Actively engaged in networking, I am well-versed in web development technologies and possess foundational knowledge in cybersecurity. Eager to contribute my skills and proactive mindset to a forward-thinking organization, I am poised to make a positive impact in the ever-evolving landscape of technology.</p>
+                <button type="button"><a style="text-decoration: none;color: white;" href="https://web.telegram.org/a/">Let's Talk</a></button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service section start -->
+    <div class="service" id="services">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <img src="menu.png" alt="Menu Image">
+                <h5>Full Stack developer</h5>
+                <div class="pra">
+                    <p>Full-stack development services encompass the creation and management of both the front-end (client-side) and back-end (server-side) of web applications, providing a holistic approach to web development.
+                         As a full-stack service provider, a company or individual has the expertise to handle every layer of web development, ensuring a seamless and integrated application. These services typically include designing user interfaces with modern front-end technologies like HTML, CSS, JavaScript, and frameworks such as React, Angular, or Vue.js. 
+                         On the back-end, full-stack developers work with server-side languages and frameworks like Node.js, Python (Django, Flask), Ruby on Rails, Java, and PHP, along with database management systems such as MySQL, PostgreSQL, MongoDB, and others. Additionally, full-stack developers are skilled in version control systems (e.g., Git), web hosting environments, and deployment processes, making them adept at managing the entire development lifecycle from concept to deployment. This comprehensive expertise allows full-stack developers to create fully functional, dynamic, and responsive web applications that meet business requirements, enhance user experience, 
+                        and ensure efficient and scalable performance. Their versatility and broad skill set make full-stack development services highly valuable for businesses seeking to develop robust web solutions quickly and effectively.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="bell.png" alt="Bell Image">
+                <h5>BLOCK CHAIN</h5>
+                <div class="pra">
+                    <p>Blockchain as a Service (BaaS) is a cloud-based solution that enables businesses to develop, host, and use their own blockchain applications, smart contracts, and other related functions on the blockchain infrastructure provided by a service provider. 
+                        This model is akin to the Software as a Service (SaaS) model, allowing companies to leverage blockchain technology without the complexity and cost associated with developing and maintaining their own blockchain infrastructure. BaaS providers typically manage all the necessary tasks and activities to keep the blockchain infrastructure operational and agile. 
+                        This includes managing bandwidth, allocating resources, providing security features like encryption, managing updates, and offering round-the-clock monitoring. By using BaaS, businesses can focus on their core operations and development efforts while the service provider takes care of the backend complexities. This approach not only accelerates the adoption of blockchain technology across various industries but also democratizes access to blockchain by lowering the entry barriers for businesses of all sizes. 
+                        Leading tech companies like Microsoft, IBM, and Amazon are prominent BaaS providers, offering robust platforms that support the development and deployment of blockchain applications with ease.</p>
+                    <p style="text-align: center;">
+                       
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cyber-crime.png" alt="Profile Image">
+                <h5>Ethical Hacking</h5>
+                <div class="pra">
+                    <p>
+                        An ethical hacker, often referred to as a white-hat hacker, is a cybersecurity professional who specializes in testing and improving an organization's security posture. 
+                        Unlike malicious hackers who exploit vulnerabilities for personal gain or to cause harm, ethical hackers use their skills to help businesses identify and mitigate security risks. 
+                        They conduct controlled and authorized penetration testing to discover weaknesses in networks, systems, and applications. By simulating cyberattacks, they provide valuable insights into potential security flaws before they can be exploited by real threats.
+                         Ethical hackers also assist in developing robust security policies and procedures, ensuring compliance with industry regulations, and providing training to staff on cybersecurity best practices. Their ultimate goal is to protect sensitive data, prevent breaches, and enhance the overall security resilience of an organization.
+                         As trusted advisors, ethical hackers play a crucial role in the proactive defense against cyber threats in today's digital landscape.</p>
+                    <p style="text-align: center;">
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script>
+        // Get all the service cards
+        const serviceCards = document.querySelectorAll('.service .card');
+
+        // Loop through each card and add event listeners
+        serviceCards.forEach(function(card) {
+            card.addEventListener('mouseenter', function() {
+                card.classList.add('hovered');
+            });
+
+            card.addEventListener('mouseleave', function() {
+                card.classList.remove('hovered');
+            });
+        });
+    </script>
+
+    <!-- Skills section start -->
+    <div class="skills" id="skills">
+        <div class="title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <img src="full-stack.webp" alt="Full Stack Development">
+                <i class="fas fa-code"></i>
+                <h5>Full Stack Development</h5>
+                <div class="pra">
+                    <p>I am a full stack developer, capable of handling both frontend and backend development tasks to deliver comprehensive web solutions.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Cloud-Computing.jpeg" alt="Cloud Computing">
+                <i class="fas fa-cloud"></i>
+                <h5>Cloud Computing</h5>
+                <div class="pra">
+                    <p>I have knowledge and experience in cloud computing platforms like Google Cloud Platform, enabling me to deploy scalable and reliable applications.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="cybersecurity.jpg" alt="Cybersecurity">
+                <i class="fas fa-shield-alt"></i>
+                <h5>Cybersecurity</h5>
+                <div class="pra">
+                    <p>As a cybersecurity enthusiast, I am adept at identifying and mitigating security threats, ensuring the safety of digital assets and sensitive information.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="teamwork.avif" alt="Team Collaboration">
+                <i class="fas fa-users"></i>
+                <h5>Project management</h5>
+                <div class="pra">
+                    <p>"Experienced project manager proficient in strategic planning, stakeholder communication, and resource allocation, ensuring successful project delivery through effective leadership."</p>
+                </div>
+            </div>
+            
+
+            <!-- New Card for Coding Skills -->
+            <div class="card">
+                <img src="coding skill.jpg" alt="Coding Skills">
+                <i class="fas fa-laptop-code"></i>
+                <h5>Coding Skills</h5>
+                <div class="pra">
+                    <p>I have strong coding skills in various programming languages including Python, JavaScript, and C++. I am proficient in writing clean, efficient, and maintainable code.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contact Me Section -->
+   
+<div class="contact-me">
+    <h2>Contact Me</h2>
+    <p>Let Me Get You A Beautiful Website and High Security To Your Data</p>
+    <a class="button" href="#" id="hireMeBtn">Hire Me</a>
+</div>
+
+
+<script>
+    // Select the "Hire Me" button
+    const hireMeBtn = document.getElementById('hireMeBtn');
+
+    // Add click event listener to the button
+    hireMeBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        
+        // Your email address
+        const email = 'aabzal865@gmail.com';
+        
+        // Subject and body of the email
+        const subject = 'Hiring Inquiry';
+        const body = 'Hello,\n\nI am interested in hiring your services. Please get in touch with me.';
+
+        // Encode the subject and body
+        const encodedSubject = encodeURIComponent(subject);
+        const encodedBody = encodeURIComponent(body);
+
+        // Generate the mailto URL
+        const mailtoUrl = `mailto:${email}?subject=${encodedSubject}&body=${encodedBody}`;
+
+        // Open the default email client with the mailto URL
+        window.location.href = mailtoUrl;
+    });
+</script>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Abzal</p>
+        <p>For more HTML, CSS, and hacking tutorials, please click on the link below to Subscribe to my channel:</p>
+        <div class="social">
+            <a href="http://wa.me/+918074880864"><img src="whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <p class="end">Copyright By Abzal</p>
+    </footer>
+</body>
+</html>
